@@ -1,0 +1,146 @@
+body {
+	margin: 0 auto;
+}
+
+#header {
+	background-color: 	#4DB8FF;
+	color: #FFFFFF;
+    display: -webkit-flex;
+  	display: flex;
+  	height: 90px;
+  	width:100%;
+  	border-bottom-left-radius: 2em;
+	border-bottom-right-radius: 2em;
+	margin: auto;
+}
+
+#header-box {
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    overflow: hidden;
+  	color: white;
+	margin: auto;
+	height: 89px;
+}
+
+/* Styles for right side title text */
+.title-textbox {
+	float: right;
+	width: 48%;
+	padding-top: 10px;
+}
+
+.primary_text {
+	font-weight: 900;
+	position: relative; 
+	top: -50%;
+	font-size: 130%;
+	letter-spacing: 1.5px;
+}
+
+.primary_text:before {
+	content: "Enterprise Search";
+}
+
+.secondary_text {
+	content: "balg";
+	font-weight: 500;
+	font-size: 100%;
+	letter-spacing: 0px;
+	color:  black;
+}
+
+.secondary_text:before {
+	content: "Relevance Engine";
+}
+
+
+
+.logo {
+	font-size: 300%;
+	font-weight: 200;
+	letter-spacing: 1.5px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 2px;
+    left: -120px;
+    width: 320px;
+}
+
+.logo-left {
+	position: absolute;
+ 	width: 30%;
+ 	margin-right: 5px;
+}
+
+.logo-left:before {
+	content: "disc";
+}
+
+.logo-icon {
+	position: absolute;
+	width: 20%;
+	left: 33%;
+}
+
+.logo-right {
+	position: absolute;
+  	width: 30%;
+  	left: 54%;
+}
+.logo-right:before {
+	content: "very";
+}
+
+.icon-mag {
+	display: block;
+	height: 60px;
+	width: 60px;
+	background: white;
+	border-radius: 50%;
+	
+	/* rotate */
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	transition-duration: 1s;
+}
+
+
+.icon-mag:before {
+	content: "";
+	position: absolute;
+	height: 85%;
+	width: 85%;
+	border-radius: 50%;
+	left: 7%;
+	top: 7%;
+	background: #4DB8FF;
+}
+
+.icon-mag:after {
+	content: "";
+	position: absolute;
+	width: 10%;
+	height:52%;
+	background: white;
+	top: 99%;
+	left: 40%;
+}
+
+.icon-mag:hover {
+	transform: rotate(-45deg);
+}
+
+
+/* Small window size ----------- */
+@media all and (max-width: 700px) {
+/* Styles */
+
+.logo-left  { display: none;}
+.logo-right {	display: none;}
+.logo {left:-30px;}
+
+}
