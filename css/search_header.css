@@ -23,79 +23,44 @@ body {
 	height: 89px;
 }
 
-/* Styles for right side title text */
-.title-textbox {
-	float: right;
-	width: 48%;
-	padding-top: 10px;
-}
-
-.primary_text {
-	font-weight: 900;
-	position: relative; 
-	top: -50%;
-	font-size: 130%;
-	letter-spacing: 1.5px;
-}
-
-.primary_text:before {
-	content: "Enterprise Search";
-}
-
-.secondary_text {
-	content: "balg";
-	font-weight: 500;
-	font-size: 100%;
-	letter-spacing: 0px;
-	color:  black;
-}
-
-.secondary_text:before {
-	content: "Relevance Engine";
-}
-
-
-
 .logo {
-	font-size: 300%;
-	font-weight: 200;
-	letter-spacing: 1.5px;
+	font-weight: 400;
+	
+	letter-spacing: 1.2px;
     margin: 0 auto;
     position: relative;
     margin-top: 2px;
-    left: -120px;
-    width: 320px;
 }
 
 .logo-left {
 	position: absolute;
- 	width: 30%;
+ 	width: 70%;
+ 	font-size: 2.5vw;
  	margin-right: 5px;
+ 	text-align: center;
 }
 
 .logo-left:before {
-	content: "disc";
+	content: "Test that this looks ok/cool"; /*Schumann Technology Consulting*/
 }
 
 .logo-icon {
+	margin-top:5px;
 	position: absolute;
-	width: 20%;
-	left: 33%;
+	width: 25%;
+	left: 70%;
 }
 
-.logo-right {
-	position: absolute;
-  	width: 30%;
-  	left: 54%;
-}
-.logo-right:before {
-	content: "very";
+.logo-icon:hover:after{
+	-o-animation: sonarEffect 1.3s ease-out 75ms;
+	-webkit-animation: sonarEffect 1.3s ease-out 75ms;
+	animation: sonarEffect 1.3s ease-out 75ms;
 }
 
-.icon-mag {
-	display: block;
-	height: 60px;
-	width: 60px;
+.icon-bub {
+	display: inline-block;
+	vertical-align: top;
+	margin-top:0px;
 	background: white;
 	border-radius: 50%;
 	
@@ -105,11 +70,11 @@ body {
 	-o-transform: rotate(45deg);
 	-ms-transform: rotate(45deg);
 	transform: rotate(45deg);
-	transition-duration: 1s;
+	transition-duration: 5s;
 }
 
 
-.icon-mag:before {
+.icon-bub:before {
 	content: "";
 	position: absolute;
 	height: 85%;
@@ -120,18 +85,22 @@ body {
 	background: #4DB8FF;
 }
 
-.icon-mag:after {
-	content: "";
-	position: absolute;
-	width: 10%;
-	height:52%;
-	background: white;
-	top: 99%;
-	left: 40%;
+.icon-bub:after {
+content: "";
+position: absolute;
+width: 10%;
+height: 10%;
+background: gray;
+top: 90%;
+left: 40%;
+border-radius: 50%;
 }
 
-.icon-mag:hover {
-	transform: rotate(-45deg);
+.icon-bub:hover ~ .icon-bub{
+	transform: rotate(800deg);
+}
+.icon-bub:hover {
+	transform: rotate(800deg);
 }
 
 
@@ -139,8 +108,7 @@ body {
 @media all and (max-width: 700px) {
 /* Styles */
 
-.logo-left  { display: none;}
-.logo-right {	display: none;}
-.logo {left:-30px;}
+.logo-left  { left:2px;font-size: 5vw;width: 100%;}
+.logo-icon {display: none;}
 
 }
