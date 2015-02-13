@@ -1,5 +1,6 @@
 body {
 	margin: 0 auto;
+	font-family: 'Lato', sans-serif;
 }
 
 #header {
@@ -16,7 +17,6 @@ body {
 
 #header-box {
     width: 100%;
-    font-family: 'Lato', sans-serif;
     overflow: hidden;
   	color: white;
 	margin: auto;
@@ -36,12 +36,13 @@ body {
 	position: absolute;
  	width: 70%;
  	font-size: 2.5vw;
+ 	font-weight:305;
  	margin-right: 5px;
  	text-align: center;
 }
 
 .logo-left:before {
-	content: "Test that this looks ok/cool"; /*Schumann Technology Consulting*/
+	content: "djgkysii thfskvkylgd kftovlfl"; /*Schumann Technology Consulting*/
 }
 
 .logo-icon {
@@ -60,8 +61,11 @@ body {
 .icon-bub {
 	display: inline-block;
 	vertical-align: top;
-	margin-top:0px;
-	background: white;
+	margin-top: 0px;
+	background: -webkit-linear-gradient(left, white, #d9d9d9, #cccccc); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, white, #d9d9d9, #cccccc); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, white, #d9d9d9, #cccccc); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, white, #d9d9d9, #cccccc); /* Standard syntax (must be last) */
 	border-radius: 50%;
 	
 	/* rotate */
@@ -70,9 +74,8 @@ body {
 	-o-transform: rotate(45deg);
 	-ms-transform: rotate(45deg);
 	transform: rotate(45deg);
-	transition-duration: 5s;
+	transition-duration: 8s;
 }
-
 
 .icon-bub:before {
 	content: "";
@@ -85,30 +88,23 @@ body {
 	background: #4DB8FF;
 }
 
-.icon-bub:after {
-content: "";
-position: absolute;
-width: 10%;
-height: 10%;
-background: gray;
-top: 90%;
-left: 40%;
-border-radius: 50%;
-}
-
 .icon-bub:hover ~ .icon-bub{
-	transform: rotate(800deg);
+	transform: rotate(1800deg);
 }
 .icon-bub:hover {
-	transform: rotate(800deg);
+	transform: rotate(1800deg);
 }
-
 
 /* Small window size ----------- */
 @media all and (max-width: 700px) {
-/* Styles */
-
-.logo-left  { left:2px;font-size: 5vw;width: 100%;}
-.logo-icon {display: none;}
+	/* Styles */
+	.logo-left  { 
+		left:2px;
+		font-size: 5vw;
+		width: 100%;
+	}
+	.logo-icon {
+		display: none;
+	}
 
 }
