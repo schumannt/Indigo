@@ -1,0 +1,21 @@
+body {
+	margin: 0 auto;
+	font-family: 'Lato', sans-serif;
+}
+
+.contentItem{
+	float: left;
+	margin:25px;
+}
+
+#bio{
+	width: 40%;
+	color: #4DB8FF;	
+}
+
+@media all and (max-width: 700px) {
+	/* Styles */
+	#bio{
+		width: 100%;	
+	}
+}
