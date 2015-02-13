@@ -14,7 +14,18 @@ body {
 }
 
 .cards{
-	margin:10px;
+	margin:25px;
+	width:400px;
+}
+
+#footer{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	color: #4DB8FF;	
+	position: fixed;
+	bottom: 0;
+	width: 100%;
 }
 
 @media all and (max-width: 700px) {
