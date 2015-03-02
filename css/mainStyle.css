@@ -1,36 +1,114 @@
 body {
 	margin: 0 auto;
 	font-family: 'Lato', sans-serif;
+	/*background: #4DB8FF;*/
+	background-image: linear-gradient(#CCCCCC, #FFFFFF);
 }
 
-.contentItem{
-	float: left;
-	margin:25px;
+#header-cont {
+    width:100%;
+    position:fixed;
+    top:0px;
+    z-index: 99;
 }
 
-#bio{
-	width: 40%;
-	color: #4DB8FF;	
+#header{
+	height: 200px;
+	top: 0px;
+	width: 80%;
+	margin: 0 auto;
+	background: #393a3c url(../img/header-wrapper.jpg);
+	color: #fff;
+	background-size: cover;
+	border-bottom-left-radius: 1em;
+	border-bottom-right-radius: 1em;
 }
 
-.cards{
-	margin:25px;
-	width:365px;
+#logo{
+	width:50px;
 }
 
-#footer{
-	position: fixed;
-	bottom: 0;
-	width: 100%;
-	color: #4DB8FF;	
-	position: fixed;
-	bottom: 0;
-	width: 100%;
+#content{
+	width: 80%;
+	margin: 0px auto;
+	margin-top: 220px;
+	font-size: large;
 }
 
-@media all and (max-width: 700px) {
+.naving{
+	height: 60px;
+	vertical-align: middle;
+	font-size: 22px;
+	margin-left: 15px;
+}
+.navbar-brand{
+	padding:0px;
+}
+
+.skillSet{
+	padding: 0px;
+}
+
+.skillSet > li{
+	position: relative;
+	float:left;
+	background-image: linear-gradient(bottom, #87fc70 25%, #0bd318 100%);
+	background-image: -o-linear-gradient(bottom, #87fc70 25%, #0bd318 100%);
+	background-image: -moz-linear-gradient(bottom, #87fc70 25%, #0bd318 100%);
+	background-image: -webkit-linear-gradient(bottom, #87fc70 25%, #0bd318 100%);
+	background-image: -ms-linear-gradient(bottom, #87fc70 25%, #0bd318 100%);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.25, #87fc70), color-stop(1, #0bd318) ); 
+	padding:10px;
+	margin: 5px;
+	/* vendor rules */
+	border-radius: 10px;
+	/* vendor rules */
+	box-shadow: inset 0 5px 5px rgba(255, 255, 255, 0.4), 0 1px 3px rgba(0, 0, 0, 0.2);
+	/* vendor rules */
+	box-sizing: border-box;
+}
+
+.meth{
+	background:#D1EEFC! important;
+}
+
+.backEnd{
+	background: #F7F7F7! important;
+}
+
+.frontEnd{
+	background: linear-gradient(to bottom, #d6cec3 0%,#e4ddca 100%)! important;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+@media all and (max-width: 1200px) {
 	/* Styles */
-	#bio{
-		width: 100%;	
+	#content{ 
+		width: 95%;
+	}
+	#header {
+		width:100%;
+		border-bottom-left-radius: 0em;
+		border-bottom-right-radius: 0em;
+	}
+	#what{
+		width: 100%;
+		display: inline-block;
+	}
+	#whoHow{
+		width: 100%;
+		display: inline-block;
+	}
+	#who, #how{
+		margin-top: 50px;
 	}
 }
