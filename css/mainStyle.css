@@ -25,7 +25,8 @@ body {
 }
 
 #logo{
-	width:50px;
+	width:165px;
+	padding:1px;
 }
 
 #content{
@@ -39,7 +40,6 @@ body {
 	height: 60px;
 	vertical-align: middle;
 	font-size: 22px;
-	margin-left: 15px;
 }
 .navbar-brand{
 	padding:0px;
@@ -78,6 +78,10 @@ body {
 
 .frontEnd{
 	background: linear-gradient(to bottom, #d6cec3 0%,#e4ddca 100%)! important;
+}
+
+.navbar-inverse {
+	background-color: #A1A2A3;
 }
 
 .cf:before,
