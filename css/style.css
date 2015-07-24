@@ -1,0 +1,100 @@
+p{
+    font-size: 18;
+    font-family: monospace;
+}
+
+.section {        
+    position:relative;
+    z-index:1;
+    height:700px;
+    width:100%;
+    background-attachment:fixed;    /* this keeps the background in place */
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+}
+.content {
+    position:relative;
+    z-index:2;
+    background-color:#fff;
+    height:30%;    /* this height difference allows the bg to show through */
+    text-align: center;    
+}
+.section#s1 {
+    background-image: url(img/1.jpg);   
+}
+.section#s2 {
+    background-image: url(img/2.jpg);
+}
+.section#s3 {    
+    background-image: url(img/3.jpg);
+}
+.section#s4 {    
+    background-image: url(img/4.jpg);
+}
+.section#s5 {    
+    background-image: url(img/5.jpg);
+}
+
+div#nav {
+    position: fixed;
+    top: 0;
+    height: 32px;
+    z-index: 3;
+    width: 100%;
+    background-color: white;
+    text-align: left; 
+}
+
+div#nav>div{
+    display:inline-block;
+    width: 49%;
+    height: 100%;
+}
+
+div#nav>div>p{
+    margin: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+div#links>p{
+    float:right;
+}
+
+p#compName {
+    color: #6495ED;  
+      position: fixed; 
+}
+
+p#compName:hover{
+    color: #B5C7E6
+}
+
+a.link{
+    color:gray;
+    text-decoration: none;
+}
+
+a.link:hover{
+    color:rgb(182, 182, 182);
+    text-decoration: none;
+}
+
+.mainBlocks{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-bottom: 20px;
+
+}
+
+div#footer {
+    position: fixed;
+    bottom: 0px;
+    color: gray;
+    left: 10px;
+}
+
+div#c5 {
+    height: 20%;
+}
