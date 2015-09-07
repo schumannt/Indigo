@@ -1,4 +1,4 @@
-p{
+p, h2,h1,h3,h4{
     font-size: 18;
     font-family: monospace;
 }
@@ -16,7 +16,7 @@ p{
     position:relative;
     z-index:2;
     background-color:#fff;
-    height:30%;    /* this height difference allows the bg to show through */
+    height:35%;    /* this height difference allows the bg to show through */
     text-align: center;    
 }
 .section#s1 {
@@ -91,4 +91,21 @@ div#footer {
 
 div#c5 {
     height: 20%;
+}
+
+div.overlay{
+    color:white;
+    padding: 40px;
+    width: 50%;
+    text-align: center;
+        text-shadow: 1px 1px 1px rgba(0,0,0,.25);
+
+}
+
+@media only screen and (max-device-width: 480px) {
+  /* define mobile specific styles come here */
+    p, h2,h1,h3,h4{
+        font-size: 5;
+        font-family: times;
+    }
 }
